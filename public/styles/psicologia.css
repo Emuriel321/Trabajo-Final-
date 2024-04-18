@@ -1,0 +1,25 @@
+
+body.body
+{
+background-color: rgb(192, 170, 202);
+color: hsl(70, 76%, 11%);
+font-size: 18px;
+
+}.logo{
+    width: 80px;
+    height:10vh ;
+}
+
+.miMenuNavegacion{
+
+    background-color: rgb(191, 44, 204);}
+main{
+    display: flex;flex-direction: column;justify-content:center; align-items: center;
+
+}
+.form{
+padding: 20px;
+border-radius: 10px;
+width: 400px;
+background-color:rgb(202, 159, 195)
+}
