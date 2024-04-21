@@ -1,0 +1,14 @@
+form{
+
+    width: 400px;
+}
+main{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(165, 165, 209);
+    height: 100vh;
+}
