@@ -14,7 +14,10 @@ font-size: 18px;
 
     background-color: rgb(191, 44, 204);}
 main{
-    display: flex;flex-direction: column;justify-content:center; align-items: center;
+   display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
 }
 .form{
