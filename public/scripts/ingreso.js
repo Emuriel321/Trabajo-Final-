@@ -11,9 +11,17 @@ const iniciarSesion = async () => {
         const usuarios = await obtenerUsuario.json()
         const usuarioRegistrado = usuarios.find(usuario => usuario.correo == correo && usuario.contrasena == contrasena);
         if(usuarioRegistrado){
-            alert("ingreso exitoso");
+            const admin = "admiema@gmail.com"
+            if(usuarioRegistrado.correo==admin){
+                alert("ingresoadmi");
+                window.location.href = "./admin.html"    
+            }else{
+                alert("ingreso exitoso");
             window.location.href = "./index.html"
 
+            }
+
+            
         }else{
             alert("no existe el usuario");
             window.location.href = "./registro.html"

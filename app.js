@@ -12,9 +12,7 @@ import usuarioRouter from "./src/routes/usuario.routes.js";
 //2. configurar nuestro servidor 
 const app = express(); 
 app.use(cors());
-app.get('/', (req, res) => {
-    res.json({ message: 'Hola mundo!' });
-  });
+
 const puerto = 3000; 
 
 //2.1 configurar las variables entorno
@@ -26,6 +24,7 @@ conexionMongo();
 //3. establecer la conexion con nuestro front index html
 const rutaPublica =path.join(process.cwd(), "public"); 
 app.use(express.json());
+console.log(rutaPublica);
 app.use(express.static(rutaPublica));
 
 
